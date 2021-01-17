@@ -19,10 +19,10 @@ Por otro lado, se incluyen tres scripts para el análisis por territorios:
 
       python analisisPorContinentes.py <trump|biden|both> <n_workers> <progressBar>  
 
-* analisisPorPaises.py: Analiza los tweets del país especificado, imprime por pantalla la polaridad de ambos candidatos y cuál de los dos es el preferido. Uso:
+* analisisPorPaises.py: Analiza los tweets del país especificado e imprime por pantalla la polaridad de ambos candidatos. Para especificar el país, se debe utilizar el código del país según la norma [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). Uso:
 
 
-      python analisisPorPaises.py <country> <n_workers> <progressBar>
+      python analisisPorPaises.py <country_code> <n_workers> <progressBar>
   
 * analisisPorEstados.py: Analiza los tweets de cada estado de EEUU, imprime por pantalla la polaridad de ambos candidatos y si el candidato con mayor positividad se corresponde con el ganador de las elecciones en ese estado. Finalmente imprime cuántas coincidencias ha habido y el porcentaje de acierto. Uso:
 
