@@ -4,9 +4,9 @@ El objetivo de este proyecto, encuadrado dentro de la asignatura Cloud y Big Dat
 
 ## Requisitos
 * Python >= 3.5 y Pip 3 `sudo apt update && sudo apt install python3-pip`
-* Pandas `pip install pandas`
-* TextBlob `pip install textblob && python -m textblob.download_corpora`
-* Pandarallel `pip install pandarallel`
+* Pandas `pip3 install pandas`
+* TextBlob `pip3 install textblob && python -m textblob.download_corpora`
+* Pandarallel `pip3 install pandarallel`
 
 ## Contenido del repositorio
 
