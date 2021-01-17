@@ -17,18 +17,24 @@ Por otro lado, se incluyen tres scripts para el análisis por territorios:
 * analisisPorContinentes.py: Analiza los tweets por continente del candidato especificado e imprime por pantalla cuál es su polaridad. Si se incluye la opción de ambos, también imprime cuál de los dos es el preferido en cada continente. Uso:
 
 
-        python analisisPorContinentes.py <trump|biden|both> <n_workers> <progressBar>  
+      python analisisPorContinentes.py <trump|biden|both> <n_workers> <progressBar>  
 
 * analisisPorPaises.py: Analiza los tweets del país especificado, imprime por pantalla la polaridad de ambos candidatos y cuál de los dos es el preferido. Uso:
 
 
-        python analisisPorPaises.py <country> <n_workers> <progressBar>
+      python analisisPorPaises.py <country> <n_workers> <progressBar>
   
 * analisisPorEstados.py: Analiza los tweets de cada estado de EEUU, imprime por pantalla la polaridad de ambos candidatos y si el candidato con mayor positividad se corresponde con el ganador de las elecciones en ese estado. Finalmente imprime cuántas coincidencias ha habido y el porcentaje de acierto. Uso:
 
-        python analisisPorEstados.py <n_workers> <progressBar>
+      python analisisPorEstados.py <n_workers> <progressBar>
   
 
 ## Más información
 
 Toda la información referente a este proyecto se puede consultar en la web del proyecto: https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/
+
+Este proyecto ha sido desarrollado por:
+* Gonzalo Martínez Berzal
+* Álvaro Penalva Alberca
+* Mario Román Dono
+* Javier Ignacio Sotelino Barriga
