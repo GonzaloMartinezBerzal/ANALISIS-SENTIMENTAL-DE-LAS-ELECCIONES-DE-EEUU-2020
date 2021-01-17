@@ -3,7 +3,7 @@
 El objetivo de este proyecto, encuadrado dentro de la asignatura Cloud y Big Data de la Universidad Complutense de Madrid, es obtener un análisis sentimental sobre un dataset de tweets generados entre el 15 de octubre de 2020 y el 8 de noviembre de 2020, los cuales incluyen los hashtags #donaldtrump y #joebiden. De esta forma, utilizando un analizador de lenguaje natural, podemos conocer cuál de los dos candidatos es el preferido en cada territorio.
 
 ## Requisitos
-* Python >=3.5
+* Python >= 3.5
 * Pandas `pip install pandas`
 * TextBlob `pip install textblob && python -m textblob.download_corpora`
 * Pandarallel `pip install pandarallel`
