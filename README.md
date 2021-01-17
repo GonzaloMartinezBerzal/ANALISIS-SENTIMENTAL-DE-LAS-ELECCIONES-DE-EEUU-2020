@@ -4,7 +4,7 @@ El objetivo de este proyecto, encuadrado dentro de la asignatura Cloud y Big Dat
 
 ## Requisitos
 * Python >=3.5
-* Pandas > pip install pandas
+* Pandas `pip install pandas`
 * TextBlob > pip install textblob && python -m textblob.download_corpora
 * Pandarallel > pip install pandarallel
 
