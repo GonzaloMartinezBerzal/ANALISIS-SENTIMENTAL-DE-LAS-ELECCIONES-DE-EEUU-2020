@@ -34,6 +34,7 @@
                         <p class="text-white-50">
                             El objetivo de este proyecto es obtener un análisis sentimental sobre un dataset de tweets generados entre el 15 de octubre de 2020 y el 8 de noviembre de 2020, los cuales incluyen los hashtags #donaldtrump y #joebiden
                         </p>
+                        <p class="text-white-50"> Este proyecto ha sido realizado dentro de la asignatura Cloud y Big Data de la Universidad Complutense de Madrid por Gonzalo Martínez Berzal, Álvaro Penalva Alberca, Mario Román Dono y Javier Ignacio Sotelino Barriga</p>
                     </div>
                 </div>
                 <img class="img-fluid" src="assets/img/24494.png" alt="" />
@@ -50,8 +51,10 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4  class="text-white">Necesidad de Big Data</h4>
-                                    <p class="mb-0 text-white-50"> La necesidad de Big Data en nuestro proyecto viene de la cantidad de tweets producidos durante el periodo de las elecciones de EEUU. Nuestra dataset, se podría considerar pequeña para la cantidad total de tweets. Actualmente disponemos de aproximadamente 2 millones de tweets en total. Necesitamos filtrar, traducir, valorar y clasificar. Es inevitable aplicar tecnicas propias del big data para realizar este proyecto.</p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/necesidadBigData.html">Más info.</a></p> 
+                                    <p class="mb-0 text-white-50"> Actualmente Twitter se ha convertido en un espacio donde un alto número de gente expresa sus opiniones acerca de todo tipo de temas, en especial la política. Por ello, es posible realizar
+                                        análisis sentimentales para determinar tendencias políticas según el territorio. Además, debido al alto volumen de tweets generados, es imprescindible aplicar técnicas propias de big data para filtrar, traducir, valorar y clasificar los datos de nuestro proyecto.
+                                    </p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/necesidadBigData.html">Más información</a></p> 
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -65,9 +68,11 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Solución a esta necesidad.</h4>
-                                    <p class="mb-0 text-white-50">El procesamiento paralelo junto a pandas son los dos grandes pilares en los que nos apoyamos para solucionar estos problemas.Pandas, es una herramienta para python que resuelve el problema en alto nivel de procesar un csv con tal cantidad de datos gracias a la creación de dataframes y su manipulación. </p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/solucionNecesidadBigData.html">Más info.</a></p>
+                                    <h4 class="text-white">Descripción de la solución</h4>
+                                    <p class="mb-0 text-white-50"> Utilizando Pandas y TextBlob, un módulo de análisis de lenguaje natural, hemos procesado nuestro dataset para obtener las tendencias por continentes, países y por estados de Estados Unidos.
+                                        En este último caso, también hemos comparado si el candidato con una mejor valoración de sus tweets relacionados se corresponde con el que resultó ganador, para valorar si el análisis se corresponde con la realidad o no.
+                                      </p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/solucionNecesidadBigData.html">Más información</a></p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -81,9 +86,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Origen y Modelo de programación</h4>
-                                    <p class="mb-0 text-white-50"> El objetivo es ser capaces de leer un csv con los campos requeridos, filtrarlo, aplicar una valoración (negativa, neutral, o positiva) y clasificarlo según lo buscado en ese script. El código es sencillo y existe uno para continentes, paises y estados.</p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/descDataset.html">Más info.</a></p>
+                                    <h4 class="text-white">Descripción del dataset</h4>
+                                    <p class="mb-0 text-white-50"> El dataset utilizado consta de casi dos millones de tweets recogidos mediante la API de Twitter entre el 15 de octubre de 2020 y el 8 de noviembre de 2020, buscando aquellos que contenían los hashtags #donaldtrump y #joebiden.
+                                    Se incluye un gran número de información para cada tweet, pero en el ámbito de este proyecto nos hemos centrado únicamente en el texto de los tweets y en la información de localización.</p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/descDataset.html">Más información</a></p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -97,9 +103,12 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Procesamiento paralelo y su aplicación.</h4>
-                                    <p class="mb-0 text-white-50">Una vez programado un modelo sin procesamiento paralelo, necesitamos adaptarlo para que utilize todos los recursos posibles de nuestro ordenador o de nuestro cluster. Para ello utilizamos pandaralel, una extensión de la api de pandas que divide la ejecución del código en los trabajadores que le mandemos a cambio de un aumento en el tiempo de preparación que se nota en los rendimientos.</p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/descTecnica.html">Más info.</a></p>
+                                    <h4 class="text-white">Descripción técnica de la aplicación</h4>
+                                    <p class="mb-0 text-white-50">
+                                        Para llevar a cabo nuestro estudio, hemos utilizado Python 3.5, Pandas, una herramienta de Big Data para poder manejar y filtrar nuestro volumen de tweets,
+                                        TextBlob para realizar el análisis sentimental y Pandarallel para paralelizar nuestra aplicación y obtener un mayor rendimiento. Se incluyen tres scripts paralelizados para
+                                        el análisis por continentes, por países y por estados de Estados Unidos. </p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/descTecnica.html">Más infomación</a></p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -113,9 +122,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">¿Por qué Pandas y no SPARK? </h4>
-                                    <p class="mb-0 text-white-50"> En nuestro proyecto existe una necesidad de utilizar python3 para la traducción de los tweets y para la aplicación del analisis sentimental. Textbloob y la API de traducción de google (py.translate la adapta a nivel usuario) necesitan de python3 para su rendimiento más optimo. Al spark usar Python2.7 existen errores al leer csvs y traducirlos. </p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/rendimiento.html">Más info.</a></p>
+                                    <h4 class="text-white">Rendimiento </h4>
+                                    <p class="mb-0 text-white-50"> Gracias al uso de Pandarallel, hemos logrado reducir el tiempo de procesamiento al paralelizar las tareas entre los distintos núcleos del ordenador.
+                                    Se ha obtenido un decrecimiento del tiempo de 2 minutos y 22 segundos al pasar de usar un solo worker a usar diez workers.</p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/rendimiento.html">Más información</a></p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -129,9 +139,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Rendimientos.</h4>
-                                    <p class="mb-0 text-white-50"> </p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/funcionesAvanzadas.html">Más info.</a></p>
+                                    <h4 class="text-white">Funciones avanzadas</h4>
+                                    <p class="mb-0 text-white-50"> Debemos destacar el uso de tecnologías avanzadas como el análisis de lenguaje natural en nuestro proyecto o la utilización de herramientas nuevas como Pandas y Pandarallel.
+                                    Intentamos implementar la paralelización en clúster mediante Dask y Amazon EMR, pero no fue posible debido a problemas con TextBlob.</p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/funcionesAvanzadas.html">Más información</a></p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -144,9 +155,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Futuro. </h4>
-                                    <p class="mb-0 text-white-50"> Invertir en los costes de la API de traducción y evitar tratar como neutros los tweets en otro idioma. Agrandar el dataset, actualmente usamos la dataset de 1 semana. Preparar un entrenamiento personalizado para Textblob. Se podría utilizar para realizar análisis sentimentales sobre cualquier tema con unas pequeñas modificaciones </p>
-                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/conclusiones.html">Más info.</a></p>
+                                    <h4 class="text-white">Conclusiones</h4>
+                                    <p class="mb-0 text-white-50"> En este proyecto hemos aprendido cómo se pueden aplicar técnicas de Big Data para procesar grandes volúmenes de datos y obtener conclusiones relevantes aplicables al mundo real. Además, hemos logrado
+                                        cumplir el objetivo de nuestro estudio, que era comprobar que el análisis sentimental de tweets es una técnica válida en el ámbito político. Existen varios aspectos que podrían ser modificados de cara a una posible ampliación en el futuro.</p>
+                                    <p><a href="https://wantonfrito.github.io/bigdata2020-2021ELECTIONS/conclusiones.html">Más información</a></p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -160,8 +172,17 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Conclusiones.</h4>
-                                    <p class="mb-0 text-white-50"> En general, las salidas de los programas reflejan la polarización de estas elecciones. Como bien sabemos Biden obtuvo el 51,4 %, lo que se refleja en más apoyo a el por redes sociales que a Trump. Por otro lado, los votantes de Trump son más activos y con tweets muy polarizados</p>
+                                    <h4 class="text-white">Citas</h4>
+                                    <p class="mb-0 text-white-50"> 
+                                         <ul>
+                                          <li>Cram, L., Llewellyn, C., Hill, R., & Magdy, W. (2017). UK general election 2017: A Twitter analysis. arXiv preprint arXiv:1706.02271.</li>
+                                          <li>Yaqub, U., Sharma, N., Pabreja, R., Chun, S. A., Atluri, V., & Vaidya, J. (2020). Location-based Sentiment Analyses and Visualization of Twitter Election Data. Digital Government: Research and Practice, 1(2), 1-19</li>
+                                          <li><a href=https://pandas.pydata.org/about/>Pandas</a></li>
+                                          <li><a href=https://github.com/nalepae/pandarallel>Pandarallel</a></li>
+                                          <li><a href=https://textblob.readthedocs.io/en/dev/>TextBlob</a></li>
+                                          <li><a href=http://www.nltk.org>NLTK</a></li>
+                                        </ul>                                         
+                                        </p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
