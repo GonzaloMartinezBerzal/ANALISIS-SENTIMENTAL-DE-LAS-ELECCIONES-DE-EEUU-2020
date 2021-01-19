@@ -40,14 +40,14 @@
 <p class="text-white-50">Dentro del repositorio, existen dos ficheros .csv: trump.csv, que incluye todos los tweets con el hashtag #donaldtrump, y biden.csv, que incluye todos los tweets con el hashtag #joebiden. 
 <p class="text-white-50">Se incluyen tres scripts para el análisis por territorios:
 <p class="text-white-50">analisisPorContinentes.py: Analiza los tweets por continente del candidato especificado e imprime por pantalla cuál es su polaridad. Si se incluye la opción de ambos, también imprime cuál de los dos es el preferido en cada continente. Uso:
-    <code>python analisisPorContinentes.py <trump|biden|both> <n_workers> <progressBar>  </code> </p>
+    <code>python analisisPorContinentes.py trump|biden|both n_workers progressBar  </code> </p>
 
 <p class="text-white-50"> analisisPorPaises.py: Analiza los tweets del país especificado e imprime por pantalla la polaridad de ambos candidatos. Para especificar el país, se debe utilizar el código del país según la norma ISO 3166-1 alpha-3. Si se quiere conocer el resultado de todos los países, se debe utilizar “ALL”. Uso:
 
-    <code> python analisisPorPaises.py <country_code> <n_workers> <progressBar> </code></p>
+    <code> python analisisPorPaises.py country_code n_workers progressBar </code></p>
 
 <p class="text-white-50"> analisisPorEstados.py: Analiza los tweets de cada estado de EEUU, imprime por pantalla la polaridad de ambos candidatos y si el candidato con mayor positividad se corresponde con el ganador de las elecciones en ese estado. Finalmente imprime cuántas coincidencias ha habido y el porcentaje de acierto. Uso:
-    <code> python analisisPorEstados.py <n_workers> <progressBar> </code> </p>
+    <code> python analisisPorEstados.py n_workers progressBar </code> </p>
 
 <p class="text-white-50"> Para ejecutar estos scripts, se deben tener instalados los siguientes paquetes:
 <ul class="text-white-50">
