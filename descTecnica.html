@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Análisis Sentimental de las Elecciones de EEUU</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <h1 class="mx-auto my-0 text-uppercase">Análisis Sentimental de las Elecciones de EEUU</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
+                <div class="mx-auto text-center">
+                </div>
+            </div>
+        </header>
+        <!-- Objetivo-->
+           <section class="about-section text-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Necesidad de Big Data</h2>
+                        <p class="text-white-50">
+                            Twitter se ha convertido en la última década en uno de los mayores foros de opinión del mundo, ya que cualquier persona, desde el ciudadano de a pie hasta las personas más influyentes, puede expresar su punto de vista sobre todo tipo de temas, siendo la política uno de los más relevantes. Teniendo en cuenta esta realidad, resulta evidente que analizar las tendencias de los tweets según el territorio puede ser de interés para los equipos de campaña de los candidatos políticos para, de esta forma, modelar su discurso y obtener más votos. Con este objetivo, hemos trabajado con un dataset de tweets relacionados con las elecciones de Estados Unidos de 2020, recogidos entre el 15 de octubre de 2020 y el 8 de noviembre de 2020, los cuales contienen los hashtags #donaldtrump y #joebiden. </p>
+                        <p class="text-white-50">
+                        La herramienta principal que hemos utilizado para llevar a cabo nuestro análisis es Pandas. Esto se debe a la necesidad que existe en nuestro proyecto de utilizar Python 3.5 en adelante. En general, las tecnologías que utilizamos son más óptimas y eficientes con esta versión de Python. Además, con Pandas solventamos los errores de lectura al crear Data Frames con Spark, por ejemplo, Spark confunde saltos de línea, caracteres extraños, emojis y diferentes anomalías que son impredecibles en un posible tweet.
+Para efectuar el análisis sentimental del texto de los tweets, hemos empleado TextBlob, una librería de Python basada en el Natural Language Toolkit (NLTK) que provee una API sencilla para efectuar estos análisis.
+En cuanto a la paralelización, hemos utilizado Pandarallel, una librería de Python que permite aumentar la velocidad del procesamiento al paralelizar las tareas entre los núcleos del procesador.
+Para la traducción de tweets consideramos utilizar la librería GoogleTrans, que utiliza Google Cloud para efectuar las traducciones. No obstante, las consultas gratuitas a esta API son limitadas, por lo que tuvimos que descartar la opción de traducir los tweets como ya hemos explicado.
+Todos los scripts y los datasets utilizados se pueden consultar en el siguiente repositorio de Github: https://github.com/WantonFrito/bigdata2020-2021ELECTIONS.
+Dentro del repositorio, existen dos ficheros .csv: trump.csv, que incluye todos los tweets con el hashtag #donaldtrump, y biden.csv, que incluye todos los tweets con el hashtag #joebiden. 
+Se incluyen tres scripts para el análisis por territorios:
+analisisPorContinentes.py: Analiza los tweets por continente del candidato especificado e imprime por pantalla cuál es su polaridad. Si se incluye la opción de ambos, también imprime cuál de los dos es el preferido en cada continente. Uso:
+    python analisisPorContinentes.py <trump|biden|both> <n_workers>      <progressBar>  
+
+analisisPorPaises.py: Analiza los tweets del país especificado e imprime por pantalla la polaridad de ambos candidatos. Para especificar el país, se debe utilizar el código del país según la norma ISO 3166-1 alpha-3. Si se quiere conocer el resultado de todos los países, se debe utilizar “ALL”. Uso:
+
+    python analisisPorPaises.py <country_code> <n_workers> <progressBar>
+
+analisisPorEstados.py: Analiza los tweets de cada estado de EEUU, imprime por pantalla la polaridad de ambos candidatos y si el candidato con mayor positividad se corresponde con el ganador de las elecciones en ese estado. Finalmente imprime cuántas coincidencias ha habido y el porcentaje de acierto. Uso:
+    python analisisPorEstados.py <n_workers> <progressBar>
+
+Para ejecutar estos scripts, se deben tener instalados los siguientes paquetes:
+Python >= 3.5 y Pip 3 sudo apt update && sudo apt install python3-pip
+Pandas pip3 install pandas
+TextBlob pip3 install textblob && python -m textblob.download_corpora
+Pandarallel pip3 install pandarallel
+                        </p>
+                        <p><a href=/bigdata2020-2021ELECTIONS/>Volver a la página principal</a></p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/24494.png" alt="" />
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
