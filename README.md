@@ -10,9 +10,7 @@ El objetivo de este proyecto, encuadrado dentro de la asignatura Cloud y Big Dat
 
 ## Contenido del repositorio
 
-Dentro del repositorio existen dos ficheros .csv: *trump.csv*, que incluye todos los tweets con el hashtag #donaldtrump, y *biden.csv*, que incluye todos los tweets con el hashtag #joebiden. Ambos suman aproximadamente dos millones de tweets.
-
-Por otro lado, se incluyen tres scripts para el análisis por territorios:
+Dentro del repositorio se incluyen tres scripts para el análisis por territorios:
 
 * analisisPorContinentes.py: Analiza los tweets por continente del candidato especificado e imprime por pantalla cuál es su polaridad. Si se incluye la opción de ambos, también imprime cuál de los dos es el preferido en cada continente. Uso:
 
@@ -28,6 +26,7 @@ Por otro lado, se incluyen tres scripts para el análisis por territorios:
 
       python analisisPorEstados.py <n_workers> <progressBar>
   
+Los datasets no se pueden subir al repositorio por limitaciones de tamaño de GitHub, pero pueden ser descargados desde aquí: [trump.csv](https://drive.google.com/file/d/1pMGb9l6iyz5j2S-D63_fVpe4-0Xp23pA/view?usp=sharing), [biden.csv](https://drive.google.com/file/d/1dOIAA6lju0Dzl0snweXKX7DdHxfeJ2FO/view?usp=sharing)
 
 ## Más información
 
