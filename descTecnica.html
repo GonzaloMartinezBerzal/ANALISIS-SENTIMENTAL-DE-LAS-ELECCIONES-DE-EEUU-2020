@@ -32,28 +32,30 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">Descripción técnica de la aplicación</h2>
                         <p class="text-white-50">
-                        La herramienta principal que hemos utilizado para llevar a cabo nuestro análisis es Pandas. Esto se debe a la necesidad que existe en nuestro proyecto de utilizar Python 3.5 en adelante. En general, las tecnologías que utilizamos son más óptimas y eficientes con esta versión de Python. Además, con Pandas solventamos los errores de lectura al crear Data Frames con Spark, por ejemplo, Spark confunde saltos de línea, caracteres extraños, emojis y diferentes anomalías que son impredecibles en un posible tweet.
-Para efectuar el análisis sentimental del texto de los tweets, hemos empleado TextBlob, una librería de Python basada en el Natural Language Toolkit (NLTK) que provee una API sencilla para efectuar estos análisis.
-En cuanto a la paralelización, hemos utilizado Pandarallel, una librería de Python que permite aumentar la velocidad del procesamiento al paralelizar las tareas entre los núcleos del procesador.
-Para la traducción de tweets consideramos utilizar la librería GoogleTrans, que utiliza Google Cloud para efectuar las traducciones. No obstante, las consultas gratuitas a esta API son limitadas, por lo que tuvimos que descartar la opción de traducir los tweets como ya hemos explicado.
-Todos los scripts y los datasets utilizados se pueden consultar en el siguiente repositorio de Github: https://github.com/WantonFrito/bigdata2020-2021ELECTIONS.
-Dentro del repositorio, existen dos ficheros .csv: trump.csv, que incluye todos los tweets con el hashtag #donaldtrump, y biden.csv, que incluye todos los tweets con el hashtag #joebiden. 
-Se incluyen tres scripts para el análisis por territorios:
-analisisPorContinentes.py: Analiza los tweets por continente del candidato especificado e imprime por pantalla cuál es su polaridad. Si se incluye la opción de ambos, también imprime cuál de los dos es el preferido en cada continente. Uso:
-    python analisisPorContinentes.py <trump|biden|both> <n_workers>      <progressBar>  
+                        La herramienta principal que hemos utilizado para llevar a cabo nuestro análisis es Pandas. Esto se debe a la necesidad que existe en nuestro proyecto de utilizar Python 3.5 en adelante. En general, las tecnologías que utilizamos son más óptimas y eficientes con esta versión de Python. Además, con Pandas solventamos los errores de lectura al crear Data Frames con Spark, por ejemplo, Spark confunde saltos de línea, caracteres extraños, emojis y diferentes anomalías que son impredecibles en un posible tweet. </p>
+<p class="text-white-50"> Para efectuar el análisis sentimental del texto de los tweets, hemos empleado TextBlob, una librería de Python basada en el Natural Language Toolkit (NLTK) que provee una API sencilla para efectuar estos análisis. </p>
+<p class="text-white-50">En cuanto a la paralelización, hemos utilizado Pandarallel, una librería de Python que permite aumentar la velocidad del procesamiento al paralelizar las tareas entre los núcleos del procesador. </p>
+<p class="text-white-50">Para la traducción de tweets consideramos utilizar la librería GoogleTrans, que utiliza Google Cloud para efectuar las traducciones. No obstante, las consultas gratuitas a esta API son limitadas, por lo que tuvimos que descartar la opción de traducir los tweets como ya hemos explicado.</p>
+<p class="text-white-50">Todos los scripts y los datasets utilizados se pueden consultar en el siguiente repositorio de Github: <a href="https://github.com/WantonFrito/bigdata2020-2021ELECTIONS"></a>.
+<p class="text-white-50">Dentro del repositorio, existen dos ficheros .csv: trump.csv, que incluye todos los tweets con el hashtag #donaldtrump, y biden.csv, que incluye todos los tweets con el hashtag #joebiden. 
+<p class="text-white-50">Se incluyen tres scripts para el análisis por territorios:
+<p class="text-white-50">analisisPorContinentes.py: Analiza los tweets por continente del candidato especificado e imprime por pantalla cuál es su polaridad. Si se incluye la opción de ambos, también imprime cuál de los dos es el preferido en cada continente. Uso:
+    <code>python analisisPorContinentes.py <trump|biden|both> <n_workers> <progressBar>  </code> </p>
 
-analisisPorPaises.py: Analiza los tweets del país especificado e imprime por pantalla la polaridad de ambos candidatos. Para especificar el país, se debe utilizar el código del país según la norma ISO 3166-1 alpha-3. Si se quiere conocer el resultado de todos los países, se debe utilizar “ALL”. Uso:
+<p class="text-white-50"> analisisPorPaises.py: Analiza los tweets del país especificado e imprime por pantalla la polaridad de ambos candidatos. Para especificar el país, se debe utilizar el código del país según la norma ISO 3166-1 alpha-3. Si se quiere conocer el resultado de todos los países, se debe utilizar “ALL”. Uso:
 
-    python analisisPorPaises.py <country_code> <n_workers> <progressBar>
+    <code> python analisisPorPaises.py <country_code> <n_workers> <progressBar> </code></p>
 
-analisisPorEstados.py: Analiza los tweets de cada estado de EEUU, imprime por pantalla la polaridad de ambos candidatos y si el candidato con mayor positividad se corresponde con el ganador de las elecciones en ese estado. Finalmente imprime cuántas coincidencias ha habido y el porcentaje de acierto. Uso:
-    python analisisPorEstados.py <n_workers> <progressBar>
+<p class="text-white-50"> analisisPorEstados.py: Analiza los tweets de cada estado de EEUU, imprime por pantalla la polaridad de ambos candidatos y si el candidato con mayor positividad se corresponde con el ganador de las elecciones en ese estado. Finalmente imprime cuántas coincidencias ha habido y el porcentaje de acierto. Uso:
+    <code> python analisisPorEstados.py <n_workers> <progressBar> </code> </p>
 
-Para ejecutar estos scripts, se deben tener instalados los siguientes paquetes:
-Python >= 3.5 y Pip 3 sudo apt update && sudo apt install python3-pip
-Pandas pip3 install pandas
-TextBlob pip3 install textblob && python -m textblob.download_corpora
-Pandarallel pip3 install pandarallel
+<p class="text-white-50"> Para ejecutar estos scripts, se deben tener instalados los siguientes paquetes:
+<ul class="text-white-50">
+    <li> Python >= 3.5 y Pip 3 <code> sudo apt update && sudo apt install python3-pip </code> </li>
+<li> Pandas <code> pip3 install pandas </code></li>
+<li> TextBlob <code> pip3 install textblob && python -m textblob.download_corpora </code> </li>
+<li> Pandarallel <code> pip3 install pandarallel </code> </li>
+        </ul>
                         </p>
                         <p><a href=/bigdata2020-2021ELECTIONS/>Volver a la página principal</a></p>
                     </div>
@@ -62,7 +64,7 @@ Pandarallel pip3 install pandarallel
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Cloud y Big Data 2020</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
