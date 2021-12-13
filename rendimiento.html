@@ -32,12 +32,13 @@
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">Rendimiento</h2>
                         <img src="assets/img/rendimiento.png" alt="">
+                        <p class="mb-0 text-white-50"> </p>
                         <p class="text-white-50">
                         Con respecto al rendimiento, hemos obtenido una mejora de tiempo sobre unos 2 minutos y 22 segundos al ejecutar nuestro programa con los dos csv que utilizamos únicamente en el análisis por continentes, pasamos de 3 minutos y 8 segundos a 46 segundos aprox en la ejecución con 10 workers. Estos tiempos incluyen el análisis sentimental de 1 millón de tuits aprox más la división que realizamos nosotros sobre el dataframe. </p>
                      <p class="text-white-50">
                         Observamos que existe un overhead a partir de los 10 workers, esto se debe al coste de preparar el procesamiento paralelo para más workers de lo necesario, pues a continuación de 10 las particiones del dataset dejan de ser eficientes y aumenta el coste de media entre 0.2 y 0.5 segundos. En este gráfico se muestra el coste en segundos con 10 siendo 46.876 y con 12 workers en 47.12 segundos. En el uso de datasets más grandes esperamos que la mayor diivisión de trabajo sea la que cause una mayor mejora en el rendimiento.
                         </p>
-                        <p><a href=/bigdata2020-2021ELECTIONS/>Volver a la página principal</a></p>
+                        <p><a href=/ANALISIS-SENTIMENTAL-DE-LAS-ELECCIONES-DE-EEUU-2020/>Volver a la página principal</a></p>
                     </div>
                 </div>
                 <img class="img-fluid" src="assets/img/24494.png" alt="" />
